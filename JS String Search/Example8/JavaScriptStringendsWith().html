@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String endsWith()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The endsWith() method.</h2>
+    <p>Checking if a string ends with "hell".</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let textTest = "Hello Ghost, welcome to the hell";
+        document.getElementById("demo").innerHTML = textTest.endsWith("hell");
+        
+        //Example 2
+        document.getElementById("demo1").innerHTML = textTest.endsWith("Ghost", 11);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String match()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The match() method.</h2>
+    <p>Search the word "Ghost".</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Search the word "Ghost".</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Search the word "Ghost".</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>Search the word "Ghost".</p>
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        let textTest = "Hello, my name is 'Ghost'."
+        const arrayTest = textTest.match("Ghost");
+        document.getElementById("demo").innerHTML = arrayTest.length + " " + arrayTest;
+    
+        //Example 2
+        let textTest1 = "Hello, my name is 'Ghost'."
+        const arrayTest1 = textTest1.match(/Ghost/);
+        document.getElementById("demo1").innerHTML = arrayTest1.length + " " + arrayTest1;
+        
+        //Example 3
+        let textTest2 = "Hello, my name is 'Ghost'."
+        const arrayTest2 = textTest2.match(/Ghost/g);
+        document.getElementById("demo2").innerHTML = arrayTest2.length + " " + arrayTest2;
+        
+        //Example 3
+        let textTest3 = "Hello, my name is 'Ghost'."
+        const arrayTest3 = textTest3.match(/Ghost/g);
+        document.getElementById("demo3").innerHTML = arrayTest3.length + " " + arrayTest3;
+        
+    </script>
+</body>
+</html>

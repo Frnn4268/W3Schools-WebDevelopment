@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript NaN - Not a Number</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <p>A number divided by a non-numeric string becomes NaN (Not a Number):</p>
+    <p>Example 50 / "Hello!"</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>You can use the global JavaScript function isNaN() to find out if a value is not a number:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>If you use NaN in a mathematical operation, the result will also be NaN:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>Using the typeof NaN is number:</p>
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        document.getElementById("demo").innerHTML = 50 / "Hello!";
+
+        //Example 2
+        let test = 50 / "Carolinne";
+        document.getElementById("demo1").innerHTML = isNaN(test);
+
+        //Example 3
+        let x = NaN;
+        let y = 5;
+        document.getElementById("demo2").innerHTML = x + y;
+
+        //Example 4
+        let z = NaN;
+        document.getElementById("demo3").innerHTML = typeof z;
+    </script>
+</body>
+</html>

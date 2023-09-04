@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables Value Undefined</title>
+</head>
+<body>
+    <h1>JavaScript Variables</h1>
+
+    <p>A variable without a value has the value of:</p>
+    <p id="demo"></p>
+
+    <p>If you re-declare a variable, it will not lose its value.</p>
+    <p id="demo1"></p>
+
+    <script>
+        let carName;
+        document.getElementById("demo").innerHTML = carName;
+
+        var bikeName = "Yamaha";
+        var bikeName;
+
+        document.getElementById("demo1").innerHTML = bikeName;
+    </script>
+</body>
+</html>

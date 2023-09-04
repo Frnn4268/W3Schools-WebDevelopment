@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String split()</title>
+</head>
+<body>
+    <h1>JavaScript String Methods</h1>
+    <p>Display the first array element, after a string split: </p>
+    <p id="demo"></p>
+
+    <br>
+
+    <h2>The split().Method</h2>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let textTest = "A,B,C,D,E";
+        const arrayExample = textTest.split(",");
+        document.getElementById("demo").innerHTML = arrayExample[1];
+
+        //Example 2
+        let test = "Fernando";
+        const arrayExample1 = test.split("");
+        test = "";
+        for(let i = 0; i < arrayExample1.length; i++) {
+            test += arrayExample1[i] + "<br>"
+        }
+        document.getElementById("demo1").innerHTML = test;
+    </script>
+</body>
+</html>

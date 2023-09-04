@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h1>JavaScript Accessing Object Properties</h1>
+
+    <p>There are two different ways to access an object property.</p>
+
+    <p>You can use laptop.property or laptop["property"].</p>
+
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+
+    <script>
+        //Create an object
+        const laptop = {
+            model   : "Asus TUF 705FDX",
+            ram     : "24GB",
+            GPU     : "GTX 3080",
+            id      : 152
+        };
+        //Example 1
+        document.getElementById("demo").innerHTML = laptop.id + " " + laptop.model + " " + laptop.GPU + "<br>";
+        //Example 2
+        document.getElementById("demo1").innerHTML = laptop["id"] + " " + laptop["model"] + " " + laptop["GPU"];
+    </script>
+</body>
+</html>

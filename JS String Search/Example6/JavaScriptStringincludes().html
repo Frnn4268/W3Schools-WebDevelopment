@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String includes()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The includes() method.</h2>
+    <p>Check if a string includes "Ghost":</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Check if a string includes "Ghost" starting from position 12:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let text = "Hello Ghost, welcome to the hell.";
+        document.getElementById("demo").innerHTML = text.includes("Ghost");
+        
+        //Example 2
+        let text1 = "Hello Ghost, welcome to the hell.";
+        document.getElementById("demo1").innerHTML = text1.includes("Ghost", 12);
+    </script>
+</body>
+</html>

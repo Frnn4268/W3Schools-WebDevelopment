@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HTML Templates</title>
+</head>
+<body>
+    <h1>JavaScript Template Literals</h1>
+    <p>Template literals allows variables in strings:</p>
+    <p id="demo"></p>
+
+    <script>
+        let header = "Templates Literals";
+        let tags = ["template literals", "javascript", "es6"];
+
+        let html = `<h2>${header}</h2><ul>`;
+
+        for (const x of tags) {
+            html += `<li>${x}</li>`;
+        }
+
+        html += `</ul>`;
+        document.getElementById("demo").innerHTML = html;
+    </script>
+</body>
+</html>

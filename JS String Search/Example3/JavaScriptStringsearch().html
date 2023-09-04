@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String search()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The search() method.</h2>
+
+    <p>The search() method returns the position of the first occurrence of a string in a string.</p>
+    <p>The position of the first occurrence of "locate" is:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>The search() method returns the position of the first occurrence of a string in a string.</p>
+    <p>Return the position of the first occurrence of a regular expression:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let texTest = "Hello, my name is 'Ghost'.";
+        let index = texTest.search("Ghost");
+        document.getElementById("demo").innerHTML = "The position of 'Ghost' is: " + index;
+        
+        //Example 2
+        let texTest1 = "Hello, my name is 'Ghost'.";
+        let index1 = texTest1.search(/Ghost/);
+        document.getElementById("demo1").innerHTML = "The position of 'Ghost' is: " + index1;
+    </script>
+</body>
+</html>

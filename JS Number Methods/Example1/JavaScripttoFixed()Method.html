@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript toFixed() Method</title>
+</head>
+<body>
+    <h1>JavaScript Number Methods</h1>
+    <p>The toFixed() method rounds a number to a given number of digits.</p>
+    <p>For working with money, toFixed(2) is perfect.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 5;
+        document.getElementById("demo").innerHTML =
+        x.toFixed(0) + "<br>" +
+        x.toFixed(2) + "<br>" +
+        x.toFixed(3) + "<br>" +
+        x.toFixed(4);
+    </script>
+</body>
+</html>

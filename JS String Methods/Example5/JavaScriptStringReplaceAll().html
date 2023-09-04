@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Replace All()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The replaceAll() method.</h2>
+
+    <p id="demo"></p>
+
+    <br>
+    
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let textTest = "My name is Fernando. I like the drift cars."
+        textTest = textTest.replaceAll("Fernando", "Ghost");
+        textTest = textTest.replaceAll("drift", "rally");
+        document.getElementById("demo").innerHTML = textTest;
+
+        //Example 2
+        let textTest1 = "My name is Fernando. I like the drift cars."
+        textTest1 = textTest1.replaceAll(/Fernando/g, "Ghost");
+        textTest1 = textTest1.replaceAll(/drift/g, "rally");
+        document.getElementById("demo1").innerHTML = textTest1;
+    </script>
+</body>
+</html>

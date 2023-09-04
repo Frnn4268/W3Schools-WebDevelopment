@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript slice() Method</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The slice() Method</h2>
+
+    <p>The sliced (extracted) part of the string is:</p>
+    <p id="demo"></p>
+    <br>
+    <p>Extract a part of a string from position 7:</p>
+    <p id="demo1"></p>
+    <br>
+    <p>Extract a part of a string counting from the end:</p>
+    <p id="demo2"></p>
+    <br>
+    <p>Extract a part of a string and return the extracted parts in a new string:</p>
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        let text = "Apple, Banana, Kiwi";
+        let part = text.slice(7,13);
+        document.getElementById("demo").innerHTML = part; 
+
+        //Example 2
+        let text1 = "Apple, Banana, Kiwi";
+        let part1 = text1.slice(7)
+        document.getElementById("demo1").innerHTML = part1;
+
+        //Example 3
+        let text2 = "Apple, Banana, Kiwi";
+        let part2 = text2.slice(-12);
+        document.getElementById("demo2").innerHTML = part2;
+
+        //Example 4
+        let text3 = "Apple, Banana, Kiwi";
+        let part3 = text3.slice(-12,-6)
+        document.getElementById("demo3").innerHTML = part3;
+    </script>
+</body>
+</html>

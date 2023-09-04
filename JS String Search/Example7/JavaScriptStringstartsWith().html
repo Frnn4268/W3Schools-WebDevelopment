@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String startsWith()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The startsWith() method.</h2>
+    <p>Check if a string starts with "Hello":</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Check if a string starts with "Hi":</p>
+    <p id="demo1"></p>
+    
+    <br>
+
+    <p id="demo2"></p>
+
+    <br>
+
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        let textTest = "Hello Ghost, welcome to the hell.";
+        document.getElementById("demo").innerHTML = textTest.startsWith("Hello");
+        
+        //Example 2
+        let textTest1 = "Hello Ghost, welcome to the hell.";
+        document.getElementById("demo1").innerHTML = textTest1.startsWith("Hi");
+
+        //Example 3
+        let textTest2 = "Hello Ghost, welcome to the hell.";
+        document.getElementById("demo2").innerHTML = textTest2.startsWith("Hello", 5);
+        //Example 4
+        document.getElementById("demo3").innerHTML = textTest2.startsWith("Ghost", 6);
+        
+    </script>
+</body>
+</html>

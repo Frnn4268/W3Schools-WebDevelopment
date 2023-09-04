@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String substring()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <p>The substring() method extract a part of a string and returns the extracted part in a new string.</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        let nameTest = "Fernando José Martínez Medina";
+        document.getElementById("demo").innerHTML = nameTest.substring(8, 13);
+    
+        //Example 2
+        let nameTest1 = "Fernando José Martínez Medina";
+        document.getElementById("demo1").innerHTML = nameTest1.substring(8, 13);
+    
+        //Example 3
+        let nameTest2 = "Fernando José Martínez Medina";
+        document.getElementById("demo2").innerHTML = nameTest2.substring(8);
+    
+        //Example 4
+        let nameTest3 = "Fernando José Martínez Medina";
+        document.getElementById("demo3").innerHTML = nameTest3.substring(-5);
+    </script>
+</body>
+</html>

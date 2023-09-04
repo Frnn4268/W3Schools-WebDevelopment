@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript The valueOf() Method</title>
+</head>
+<body>
+    <h2>JavaScript Number Methods</h2>
+
+    <p>The valueOf() method returns a number as a number:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = 1000;
+
+        document.getElementById("demo").innerHTML = 
+        x.valueOf() + "<br>" +
+        (1000).valueOf() + "<br>" +
+        (990 + 10).valueOf();
+    </script>
+</body>
+</html>

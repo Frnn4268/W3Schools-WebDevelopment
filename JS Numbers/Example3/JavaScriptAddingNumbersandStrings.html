@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Adding Numbers and Strings</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    
+    <p>If you add two numbers, the result will be a number:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>If you add two numeric strings, the result will be a concatenated string:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>If you add a number and a numeric string, the result will be a concatenated string:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>If you add a numeric string and a number, the result will be a concatenated string:</p>
+    <p id="demo3"></p>
+
+    <br>
+
+    <p>A common mistake is to expect this result to be 30:</p>
+    <p id="demo4"></p>
+
+    <br>
+
+    <p>A common mistake is to expect this result to be 102030:</p>
+    <p id="demo5"></p>
+
+    <script>
+        //Example 1
+        let x = 20;
+        let y = 30;
+        let z = x + y;
+        document.getElementById("demo").innerHTML = z;
+
+        //Example 2
+        let x1 = "20";
+        let y1 = "30";
+        let z1 = x + y;
+        document.getElementById("demo1").innerHTML = z1;
+
+        //Example 3
+        let x2 = 20;
+        let y2 = "30";
+        let z2 = x + y;
+        document.getElementById("demo2").innerHTML = z2;
+
+        //Example 4
+        let x3 = "20";
+        let y3 = 30;
+        document.getElementById("demo3").innerHTML = "The result is = " + x3 + y3;
+
+        //Example 5
+        var x4 = 10;
+        var y4 = 20;
+        document.getElementById("demo4").innerHTML = "The result is = " + x4 + y4;
+
+        //Example 6
+        let x5 = 10;
+        let y5 = 20;
+        let z5 = "30";
+        let result = x5 + y5 + z5;
+        document.getElementById("demo5").innerHTML = result;
+    </script>
+</body>
+</html>

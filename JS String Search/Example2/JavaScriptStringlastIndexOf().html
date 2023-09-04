@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String lastIndexOf()</title>
+</head>
+<body>
+    <h1>JavaScript String</h1>
+    <h2>The lastIndexOf() method.</h2>
+    <p>The position of the last occurrence of "locate" is:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>The indexOf() method accepts a second parameter as the starting position for the search:</p>
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        let texTest = "Hello, my name is 'Ghost'.";
+        let index = texTest.lastIndexOf("Ghost");
+        document.getElementById("demo").innerHTML = "The position of 'Ghost' is: " + index;
+
+        //Example 2
+        let texTest1 = "Hello, my name is 'Ghost'.";
+        let index1 = texTest1.indexOf("Fernando");
+        document.getElementById("demo1").innerHTML = "The position of 'Ghost' is: " + index1;
+    
+        //Example 3
+        let texTest2 = "Hello, my name is 'Ghost'.";
+        let index2 = texTest2.indexOf("Ghost", 15);
+        document.getElementById("demo2").innerHTML = "The position of 'Ghost' is: " + index2;
+    </script>
+</body>
+</html>

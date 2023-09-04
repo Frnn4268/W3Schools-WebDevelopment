@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Numeric Strings</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+
+    <p>JavaScript will try to convert strings to numbers when dividing, multiplying or subtracting, but not when to numbers are adding.</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        let x = "100";
+        let y = "10";
+        let z = x / y;   
+        document.getElementById("demo").innerHTML = z;
+
+        let x1 = "100";
+        let y1 = "10";
+        let z1 = x1 * y1;   
+        document.getElementById("demo1").innerHTML = z1;
+        
+        let x2 = "100";
+        let y2 = "10";
+        let z2 = x2 - y2;   
+        document.getElementById("demo2").innerHTML = z2;
+        
+        let x3 = "100";
+        let y3 = "10";
+        let z3 = x3 + y3;   
+        document.getElementById("demo3").innerHTML = z3;
+    </script>
+</body>
+</html>

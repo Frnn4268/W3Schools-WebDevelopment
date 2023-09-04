@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operator Precedence</title>
+</head>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+    <h2>Operator Precedence</h2>
+    <p>First example: Multiplication has precedence over addition.</p>
+
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Second example: Multiplication has precedence over addition.</p>
+    <p>But parenthesis has precedence over multiplication.</p>
+
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Third example: When many operations has the same precedence, they are computed from left to right.</p>
+
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>Fourth example: When many operations has the same precedence, they are computed from left to right.</p>
+
+    <p id="demo3"></p>
+
+    <script>
+        //First Example
+        document.getElementById("demo").innerHTML = 100 + 50 * 5;
+
+        //Second Example
+        document.getElementById("demo1").innerHTML = (500 + 5) * 3;
+
+        //Third Example
+        document.getElementById("demo2").innerHTML = 100 + 50 - 25;
+
+        //Fourth Example
+        document.getElementById("demo3").innerHTML = 200 / 2 * 5;
+    </script>
+</body>
+</html>

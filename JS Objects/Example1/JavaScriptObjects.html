@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <h1>JavaScript Object</h1>
+
+    <p id="demo"></p>
+
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let bikeName = "Kawazaki Z1000";
+        document.getElementById("demo").innerHTML = bikeName;
+
+        //Example 2
+        const bike = {type: "Yamaha", model: "R1", color: "black"};
+
+        document.getElementById("demo1").innerHTML = "The bike is " + bike.type;
+    </script>
+</body>
+</html>

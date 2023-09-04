@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Strings as Objects</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <p id="demo"></p>
+
+    <h2>Never creates a Strings as Objects</h2>
+    <p>Strings and objects can't be safely compared</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>JavaScript objects cannot be compared.</p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <script>
+        //Example 1
+        let name = "Fernando";
+        let y = new String("Jose");
+        document.getElementById("demo").innerHTML = typeof name + "<br>" + typeof y;
+    
+        //Example 2
+        let bikeName = "Z1000";
+        let z = new String("Z1000");
+        document.getElementById("demo1").innerHTML = (bikeName==z);
+
+        //Example 3
+        let bikeName1 = "R1";
+        let a = new String("R1");
+        document.getElementById("demo2").innerHTML = (bikeName1===a);
+    
+        //Example 4
+        let nameCompare = new String("Fernando");
+        let nameCompareTest = new String("Fernando");
+        document.getElementById("demo3").innerHTML = (nameCompare==nameCompareTest);
+        document.getElementById("demo4").innerHTML = (nameCompare===nameCompareTest);
+    </script>
+</body>
+</html>

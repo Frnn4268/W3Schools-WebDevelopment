@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Infinity</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Division by zero generates infinity in the result: </p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Using typeof method in a Infinity number: </p>
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        let numberTest = 100;
+        let space = "";
+        while (numberTest != Infinity) {
+            numberTest = numberTest * numberTest;
+            space = space + numberTest + "<br>";
+        } 
+        document.getElementById("demo").innerHTML = space;
+
+        //Example 2
+        let numberDivision = 5/0;
+        let numberDivision1 = -5/0;
+        document.getElementById("demo1").innerHTML = numberDivision + "<br>" + numberDivision1;
+
+        //Example 3
+        document.getElementById("demo2").innerHTML = typeof Infinity;
+    </script>
+</html>

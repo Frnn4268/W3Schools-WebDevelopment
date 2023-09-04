@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String matchAll()</title>
+</head>
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The matchAll() method.</h2>
+    <p id="demo"></p>
+
+    <br>
+
+    <p id="demo1"></p>
+
+    <br>
+
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        let textTest = "This is the example of Ghost. My name is Ghost, no ghost, is Ghost";
+        const iteratorTest = textTest.matchAll("Ghost");
+        document.getElementById("demo").innerHTML = Array.from(iteratorTest);
+        
+        //Example 2
+        let textTest1 = "This is the example of Ghost. My name is Ghost, no ghost, is Ghost";
+        const iteratorTest1 = textTest1.matchAll(/Ghost/g);
+        document.getElementById("demo1").innerHTML = Array.from(iteratorTest1);
+        
+        //Example 3
+        let textTest2 = "This is the example of Ghost. My name is Ghost, no ghost, is Ghost";
+        const iteratorTest2 = textTest2.matchAll(/Ghost/gi);
+        document.getElementById("demo2").innerHTML = Array.from(iteratorTest2);
+        
+    </script>
+</body>
+</html>

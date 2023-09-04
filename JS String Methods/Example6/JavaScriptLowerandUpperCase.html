@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String toLowerCase() & toUpperCase()</title>
+</head>
+<body>
+    <h1>JavaScript String Methods</h1>
+
+    <h2>Converting string to upper case: </h2>
+    <button onclick="toUpper()">To upper case!</button>
+    <p id="demo">Fernando - Ghost</p>
+
+    <br>
+
+    <h2>Converting string to lower case: </h2>
+    <button onclick="toLower()">To lower case!</button>
+    <p id="demo1">Fernando - Ghost</p>
+
+    <script>
+        //Example 1 
+        function toUpper() {
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = text.toUpperCase();
+        }
+
+        //Example 2
+        function toLower() {
+            let text = document.getElementById("demo1").innerHTML;
+            document.getElementById("demo1").innerHTML = text.toLowerCase();
+        }
+    </script>
+</body>
+</html>

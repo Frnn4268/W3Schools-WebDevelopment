@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Replacing String Content</title>
+</head>
+<body>
+    <h1>JavaScript String Methods</h1>
+    <p>Replace "Jose" with "Ghost" in the paragraph below: </p>
+    <button onclick="replaceText()">Replace it!</button>
+    <p id="demo">Fernando Jose Martínez Medina</p>
+
+    <br>
+
+    <p>Try to replace "Jose" with "Ghost" in the paragraph below:</p>
+    <p>The replace() method is case sensitive. JOSE (with upper-case) will not be replaced.</p>
+    <button onclick="replaceText1()">Replace it!</button>
+    <p id="demo1">Fernando Jose Martinez Medina</p>
+
+    <br>
+
+    <p>Try to replace "Jose" with "Ghost" in the paragraph below:</p>
+    <p>Replace "Jose" with "Ghost" in the paragraph using /i below: </p>
+    <button onclick="replaceText2()">Replace it!</button>
+    <p id="demo2">Fernando Jose Martinez Medina</p>
+
+    <br>
+
+    <p>Replace all occurrences of "Jose" with "Ghost" in the paragraph below:</p>
+    <button onclick="replaceText3()">Replace it!</button>
+    <p id="demo3">Jose Jose Jose</p>
+
+    <script>
+        //Example 1
+        function replaceText() {
+            let text = document.getElementById("demo").innerHTML;
+            document.getElementById("demo").innerHTML = text.replace("Jose", "Ghost");
+        }
+
+        //Example 2
+        function replaceText1() {
+            let text = document.getElementById("demo1").innerHTML;
+            document.getElementById("demo1").innerHTML = text.replace("JOSE", "Ghost");
+        }
+
+        //Example 3
+        function replaceText2() {
+            let text = document.getElementById("demo2").innerHTML;
+            document.getElementById("demo2").innerHTML = text.replace(/JOSE/i, "Ghost");
+        }
+
+        //Example 4
+        function replaceText3() {
+            let text = document.getElementById("demo3").innerHTML;
+            document.getElementById("demo3").innerHTML = text.replace(/Jose/g, "Ghost");
+        }
+    </script>
+</body>
+</html>
