@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array find()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The find() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [100, 5, 2, 29, 78];
+        let first = numbers.find(myFunction);
+
+        document.getElementById("demo").innerHTML = "First number over 99 is " + first;
+
+        function myFunction(value, index, array) {
+            return value > 99;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Displaying Dates</title>
+</head>
+<body>
+    <h1>JavaScript Array Const</h1>
+    <h2>Using new Date()</h2>
+
+    <p>new Date() without arguments, creates a date object with the current date and time:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <h2>The toUTCString() Method</h2>
+    <p>Convert a date to a string using the UTC standard:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <h2>The toISOString() Method</h2>
+    <p>Convert a date to a string using the ISO standard:</p>
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        const dateNew = new Date();
+        document.getElementById("demo").innerHTML = dateNew;
+
+        //Example 2
+        const dateNew1 = new Date();
+        document.getElementById("demo1").innerHTML = dateNew1.toUTCString();
+
+        //Example 3
+        const dateNew2 = new Date();
+        document.getElementById("demo2").innerHTML = dateNew2.toISOString();
+    </script>
+</body>
+</html>

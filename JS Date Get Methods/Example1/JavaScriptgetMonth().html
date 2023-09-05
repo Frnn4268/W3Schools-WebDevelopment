@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript getMoth() Method</title>
+</head>
+<body>
+    <h1>JavaScript Date Get Methods</h1>
+    <h2>The getMonth() Method</h2>
+
+    <p>Return the month of a date as a number from 0 to 11.</p>
+    <p>To get the correct month number, you must add 1:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Return the month as a number.</p>
+    <p>You can use an array of names to return the month as a name:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        const dateGet = new Date("2023-03-11");
+        document.getElementById("demo").innerHTML = dateGet.getMonth() + 1;
+        
+        //Example 2
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        const dateMonth = new Date("2021-03-11");
+        let month = months[dateMonth.getMonth()];
+        document.getElementById("demo1").innerHTML = month;
+    </script>
+</body>
+</html>

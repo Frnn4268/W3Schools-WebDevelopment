@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Using Math.min() on an Array</title>
+</head>
+<body>
+    <h1>JavaScript Array Method</h1>
+    <p>The lowest number is <span id="demo"></span>.</p>
+
+    <script>
+        const points = [100, 1, 2, 5, 25, 30];
+        document.getElementById("demo").innerHTML = myArrayMin(points);
+
+        function myArrayMin(arr) {
+            return Math.min.apply(null, arr);
+        }
+    </script>
+</body>
+</html>

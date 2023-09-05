@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array filter()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The filter() Method</h2>
+
+    <p>Create a new array with all array elements that passes a test.</p>
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [100, 5, 2, 29, 78];
+        const over18 = numbers.filter(myFunction);
+
+        document.getElementById("demo").innerHTML = over18;
+
+        function myFunction(value) {
+            return value > 18;
+        }
+    </script>
+</body>
+</html>

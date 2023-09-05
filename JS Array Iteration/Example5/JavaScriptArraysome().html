@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array some()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The some() Method</h2>
+
+    <p>The some() method checks if some array values pass a test:</p>
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [100, 5, 2, 29, 78];
+        let someOver20 = numbers.some(myFunction);
+
+        document.getElementById("demo").innerHTML = "Some over 20 is " + someOver20;
+
+        function myFunction(value, index, array) {
+            return value > 20;
+        }
+    </script>
+</body>
+</html>

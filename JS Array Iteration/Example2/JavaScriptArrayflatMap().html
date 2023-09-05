@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array flatMap()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The flatMap() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const myArr = [100, 5, 2, 29, 78];
+        const newArr = myArr.flatMap((x) => x * 2);
+        document.getElementById("demo").innerHTML = newArr;
+    </script>
+</body>
+</html>

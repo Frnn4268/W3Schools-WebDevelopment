@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array reduce()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The reduce() Method</h2>
+
+    <p>Find the sum of all numbers in an array:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Find the sum of all numbers in an array:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        const numbers = [100, 5, 2, 29, 78];
+        let sum = numbers.reduce(myFunction);
+
+        document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+        function myFunction(total, value) {
+            return total + value;
+        }
+
+        //Example 2
+        let sum1 = numbers.reduce(myFunction1, 100);
+
+        document.getElementById("demo1").innerHTML = "The sum is " + sum1;
+
+        function myFunction1(total, value) {
+            return total + value;
+        }
+    </script>
+</body>
+</html>

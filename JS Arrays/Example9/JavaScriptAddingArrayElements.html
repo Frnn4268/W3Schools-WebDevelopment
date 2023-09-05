@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Adding Array Elements</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The push() Method</h2>
+
+    <p>The push method appends a new element to an array.</p>
+    <button onclick="myFunction()">Try it!</button>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+    <button onclick="myFunction1()">Try it!</button>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        const cars = ["R8", "R35", "Model 3"];
+        document.getElementById("demo").innerHTML = cars;
+
+        function myFunction() {
+            cars.push("Model X");
+            document.getElementById("demo").innerHTML = cars;
+        }
+
+        //Example 2
+        const cars1 = ["R8", "R35", "Model 3"];
+        document.getElementById("demo1").innerHTML = cars1;
+
+        function myFunction1() {
+            cars1[cars1.length] = "Model X";
+            document.getElementById("demo1").innerHTML = cars1;
+        }
+    </script>
+</body>
+</html>

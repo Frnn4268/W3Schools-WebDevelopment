@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Associative Arrays</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        const person = [];
+        person[0] = "Fernando";
+        person[1] = "Carolinne";
+        person[2] = 46; 
+        document.getElementById("demo").innerHTML =
+        person[0] + " " + person.length;
+
+        //Example 2
+        const person1 = [];
+        person1["firstName"] = "John";
+        person1["lastName"] = "Doe";
+        person1["age"] = 46; 
+        document.getElementById("demo1").innerHTML =
+        person1[0] + " " + person1.length;
+    </script>
+</body>
+</html>

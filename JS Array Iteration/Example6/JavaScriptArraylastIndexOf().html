@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array lastIndexOf()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The lastIndexOf() Method</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        const carBrands = ["Audi", "BMW", "Mercedes Benz", "BMW"];
+        let position = carBrands.lastIndexOf("BMW") + 1;
+
+        document.getElementById("demo").innerHTML = "The brand BMW is found in position " + position;
+    </script>
+</body>
+</html>

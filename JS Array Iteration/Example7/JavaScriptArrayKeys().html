@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Keys()</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The keys() Method</h2>
+
+    <p>Return an Array Iterator object with the keys of the array:</p>
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["Audi R8", "Mazda Furai", "Ferrari F40", "Mercedes Benz AMG"];
+        const keys = cars.keys();
+
+        let text = "";
+        for (let x of keys) {
+            text += x + " " + cars[x] +  "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

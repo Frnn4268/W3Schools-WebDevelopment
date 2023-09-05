@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript MAX_VALUE</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <h2>The MAX_VALUE Property</h2>
+    <p>The largest possible number in JS is: </p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Using a Number property on a variable, or value, will return undefined:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let largestMAX = Number.MAX_VALUE;
+        document.getElementById("demo").innerHTML = largestMAX;
+
+        //Example 2
+        let x = 5;
+        document.getElementById("demo1").innerHTML = x.MAX_VALUE;
+    </script>
+</body>
+</html>

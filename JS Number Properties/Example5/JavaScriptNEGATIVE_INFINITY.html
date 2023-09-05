@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript NEGATIVE_INFINITY</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <h2>The NEGATIVE_INFINITY Property</h2>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>NEGATIVE_INFINITY is returned on overflow:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let x = Number.NEGATIVE_INFINITY;
+        document.getElementById("demo").innerHTML = x;
+
+        //Example 2
+        let y = -1 / 0;
+        document.getElementById("demo").innerHTML = y;
+    </script>
+</body>
+</html>

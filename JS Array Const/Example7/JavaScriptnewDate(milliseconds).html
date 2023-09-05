@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript new Date(milliseconds)</title>
+</head>
+<body>
+    <h1>JavaScript Array Const</h1>
+    <h2>Using new Date()</h2>
+
+    <p>100000000000 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>-100000000000 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>86400000 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>0 milliseconds from January 01 1970 UTC is:</p>
+    <p id="demo3"></p>
+    <script>
+        //Example 1
+        const d = new Date(100000000000);
+        document.getElementById("demo").innerHTML = d;
+
+        //Example 2
+        const d1 = new Date(-100000000000);
+        document.getElementById("demo1").innerHTML = d1;  
+
+        //Example 3
+        const d2 = new Date(86400000);
+        document.getElementById("demo2").innerHTML = d2;
+
+        //Example 4
+        const d3 = new Date(0);
+        document.getElementById("demo3").innerHTML = d3;
+    </script>
+</body>
+</html>

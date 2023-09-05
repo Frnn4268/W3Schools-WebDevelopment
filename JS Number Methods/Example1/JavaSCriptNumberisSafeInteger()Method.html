@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Number.isSafeInteger() Method</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <h2>The isSafeInteger() Method</h2>
+
+    <p>The isSafeInteger() method returns true if the argument is a safe integer.</p>
+    <p>Otherwise it returns false.</p>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+        Number.isSafeInteger(1) + "<br>" + Number.isSafeInteger(9999999999999999999999);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array delete()</title>
+</head>
+<body>
+    <h1>JavaScript Arrays Methods</h1>
+    <h2>The delete Method</h2>
+
+    <p>Deleting elements leaves undefined holes in an array:</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const carBrands = ["Audi", "Lexus", "Mazda", "Mercedez Benz"];
+        document.getElementById("demo").innerHTML = "The first brand is: " + carBrands[0];
+        delete carBrands[0];
+        document.getElementById("demo1").innerHTML = "The first brand now is: " + carBrands[0];
+    </script>
+</body>
+</html>

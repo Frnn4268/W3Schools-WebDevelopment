@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Numeric Sort</title>
+</head>
+<body>
+    <h1>JavaScript Array Sort</h1>
+    <h2>The sort() Method</h2>
+
+    <p>Sort the array in ascending order:</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const points = [100, 1, 2, 5, 25, 30];
+        document.getElementById("demo").innerHTML = points;  
+
+        points.sort(function(a, b){return a - b});
+        document.getElementById("demo1").innerHTML = points;
+    </script>
+</body>
+</html>

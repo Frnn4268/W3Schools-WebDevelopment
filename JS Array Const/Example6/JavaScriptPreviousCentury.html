@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Previous Century</title>
+</head>
+<body>
+    <h1>JavaScript Array Const</h1>
+    <h2>JavaScript new Date()</h2>
+
+    <p>Two digit years will be interpreted as 19xx:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>One digit years will be interpreted as 19xx:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        const dateNew = new Date(99, 11, 24);
+        document.getElementById("demo").innerHTML = dateNew;
+
+        //Example 2
+        const dateNew1 = new Date(9, 11, 24);
+        document.getElementById("demo1").innerHTML = dateNew1;
+    </script>
+</body>
+</html>

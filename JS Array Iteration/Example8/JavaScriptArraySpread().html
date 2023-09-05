@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array Spread</title>
+</head>
+<body>
+    <h1>JavaScript Array Iteration</h1>
+    <h2>The ... Operator</h2>
+
+    <p>The "spread" operator spreads elements of iterable objects:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const q1 = ["Jan", "Feb", "Mar"];
+        const q2 = ["Apr", "May", "Jun"];
+        const q3 = ["Jul", "Aug", "Sep"];
+        const q4 = ["Oct", "Nov", "May"];
+
+        const year = [...q1, ...q2, ...q3, ...q4];
+        document.getElementById("demo").innerHTML = year; 
+    </script>
+</body>
+</html>

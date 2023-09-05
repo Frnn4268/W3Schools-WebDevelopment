@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Stable Array sort()</title>
+</head>
+<body>
+    <h1>JavaScript Array Sort</h1>
+    <p>When sorting elements on a key, the elements must keep their relative position to other objects with the same key.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const myArr = [
+        {name:"X00",price:100 },
+        {name:"X01",price:100 },
+        {name:"X02",price:100 },
+        {name:"X03",price:100 },
+        {name:"X04",price:110 },
+        {name:"X05",price:110 },
+        {name:"X06",price:110 },
+        {name:"X07",price:110 },
+        {name:"X08",price:120 },
+        {name:"X09",price:120 },
+        {name:"X10",price:120 }
+        ];
+
+        myArr.sort( (p1, p2) => {
+        if (p1.price < p2.price) return -1;
+        if (p1.price > p2.price) return 1;
+        return 0;
+        });
+
+        let txt = "";
+        myArr.forEach(myFunction);
+
+        function myFunction(value) {
+            txt += value.name + " " + value.price + "<br>"; 
+        }
+        document.getElementById("demo").innerHTML = txt;
+    </script>
+</body>
+</html>

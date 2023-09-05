@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Looping Array Elements</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>Looping an Array</h2>
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["R8", "R35", "Furai", "R7"];
+        let CLen = cars.length;
+
+        let text = "<ul>";
+        for (let i = 0; i < CLen; i++) {
+            text += "<li>" + cars[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

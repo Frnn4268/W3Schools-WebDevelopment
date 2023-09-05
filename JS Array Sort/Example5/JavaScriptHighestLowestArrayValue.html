@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Find the Highest or Lowest Array Value</title>
+</head>
+<body>
+    <h1>JavaScript Array Method</h1>
+    <h2>The sort() Method</h2>
+
+    <p>The lowest number is: <span id="demo"></span>.</p>
+
+    <br>
+
+    <p>The highest number is: <span id="demo1"></span>.</p>
+
+    <script>
+        //Example 1
+        const points = [100, 1, 2, 5, 25, 30];
+        points.sort(function(a, b){return a-b});
+        document.getElementById("demo").innerHTML = points[0];
+
+        //Example 2
+        points.sort(function(a, b){return b-a});
+        document.getElementById("demo1").innerHTML = points[0];
+    </script>
+</body>
+</html>
