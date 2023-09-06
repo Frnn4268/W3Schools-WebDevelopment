@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Booleans as Objects</title>
+</head>
+<body>
+    <h1>JavaScript Booleans</h1>
+
+    <p>Booleans and Boolean objects cannot be safely compared:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Booleans and Boolean objects cannot be safely compared:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Booleans and Boolean objects cannot be safely compared:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>Booleans and Boolean objects cannot be safely compared.</p>
+    <p id="demo3"></p>
+
+    <br>
+
+    <p>Booleans and Boolean objects cannot be safely compared.</p>
+    <p id="demo4"></p>
+
+    <script>
+        //Example 1
+        let x = false;
+        let y = new Boolean(false);
+        document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+
+        //Example 2
+        let x1 = false;         // x is a boolean
+        let y1 = new Boolean(false);  // y is an object
+        document.getElementById("demo1").innerHTML = (x1 == y1);
+
+        //Example 3
+        let x2 = false;         // x is a Boolean
+        let y2 = new Boolean(false);  // y is an object
+        document.getElementById("demo2").innerHTML = (x2 === y2);
+
+        //Example 4
+        const x3 = new Boolean(false);
+        const y3 = new Boolean(false);
+        document.getElementById("demo3").innerHTML = (x3 == y3);
+
+        //Example 5
+        const x4 = new Boolean(false);
+        const y4 = new Boolean(false);
+        document.getElementById("demo4").innerHTML = (x4 === y4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Random Integers</title>
+</head>
+<body>
+    <h1>JavaScript Random</h1>
+    <h2>JavaScript Math</h2>
+
+    <p>Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both 
+    included):</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Math.floor(Math.random() * 100)) returns a random integer between 0 and 99 (both included):</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Math.floor(Math.random() * 10) + 1) returns a random integer between 1 and 10 (both included):</p>
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        document.getElementById("demo").innerHTML = Math.floor(Math.random() * 10);
+
+        //Example 2
+        document.getElementById("demo1").innerHTML = Math.floor(Math.random() * 100);
+
+        //Example 3
+        document.getElementById("demo2").innerHTML = Math.floor(Math.random() * 10) + 1;
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Everything Without a "Value" is False</title>
+</head>
+<body>
+    <h1>JavaScript Booleans</h1>
+
+    <p>Display the Boolean value of 0:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Display the Boolean value of undefined:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Display the Boolean value of null:</p>
+    <p id="demo2"></p>
+
+    <br>
+
+    <p>Display the Boolean value of false:</p>
+    <p id="demo3"></p>
+
+    <br>
+
+    <p>Display the Boolean value of NaN:</p>
+    <p id="demo4"></p>
+
+    <script>
+        //Example 1
+        let x = 0;
+        document.getElementById("demo").innerHTML = Boolean(x);
+
+        //Example 2
+        let y;
+        document.getElementById("demo1").innerHTML = Boolean(y);
+
+        //Example 3
+        let z = null;
+        document.getElementById("demo2").innerHTML = Boolean(z);
+
+        //Example 4
+        let a = false;
+        document.getElementById("demo3").innerHTML = Boolean(a);
+
+        //Example 5
+        let b = 10 / "Hello";
+        document.getElementById("demo4").innerHTML = Boolean(b);
+    </script>
+</body>
+</html>

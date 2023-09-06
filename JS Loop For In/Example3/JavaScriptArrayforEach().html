@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Array.forEach()</title>
+</head>
+<body>
+    <h1>JavaScript Loop For In</h1>
+
+    <h2>The forEach() Method</h2>
+    <p>Call a function once for each array element:</p>
+    <p id="demo"></p>
+
+    <script>
+        const numbers = [1, 2, 3, 4, 5];
+
+        let txt = "";
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+
+        function myFunction(value) {
+            txt += value + "<br>"; 
+        }
+    </script>
+</body>
+</html>
