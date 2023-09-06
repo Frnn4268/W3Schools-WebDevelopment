@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript forEach() Method</title>
+</head>
+<body>
+    <h1>JavaScript Maps</h1>
+
+    <p>Using Map.forEach()</p>
+    <p id="demo"></p>
+
+    <script>
+        const cars = new Map([
+            ["RX7", 500],
+            ["R8", 300],
+            ["Wrangler", 200]
+        ]);
+        
+        let txt = "";
+        cars.forEach(function(value, key) {
+            txt += key + ' = ' + value + "<br>"
+        }) 
+
+        document.getElementById("demo").innerHTML = txt;
+    
+    </script>
+</body>
+</html>

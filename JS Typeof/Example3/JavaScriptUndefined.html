@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Undefined</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+
+    <p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let car;
+        document.getElementById("demo").innerHTML =
+        car + "<br>" + typeof car;
+
+        //Example 2
+        let car1 = "Volvo";
+        car1 = undefined;
+        document.getElementById("demo1").innerHTML = car1 + "<br>" + typeof car1;
+    </script>
+</body>
+</html>

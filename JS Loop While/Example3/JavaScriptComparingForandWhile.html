@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Comparing For and While</title>
+</head>
+<body>
+    <h1>JavaScript Loop While</h1>
+    <h2>Example of a for: </h2>
+    <p id="demo"></p>
+
+    <br>
+
+    <h2>Example of a while: </h2>
+    <p id="demo1"></p>
+
+    <script>
+        const cars = ["BMW", "Audi", "Ferrari", "Toyota"];
+
+        //Example 1
+        let i = 0;
+        let text = "";
+        for (;cars[i];) {
+            text += cars[i] + "<br>";
+            i++;
+        }
+        document.getElementById("demo").innerHTML = text;
+
+        //Example 2
+        let j = 0;
+        let text1 = "";
+        while (cars[j]) {
+            text1 += cars[j] + "<br>";
+            j++;
+        }
+
+        document.getElementById("demo1").innerHTML = text1;
+    </script>
+</body>
+</html>

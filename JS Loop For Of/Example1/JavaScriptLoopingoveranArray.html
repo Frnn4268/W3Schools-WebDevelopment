@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Looping over an Array</title>
+</head>
+<body>
+    <h1>JavaScript Loop For Of</h1>
+
+    <p>The for of statement loops through the values of any iterable object:</p>
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["BMW", "Audi", "Toyota"];
+
+        let text = "";
+        for (let x of cars) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

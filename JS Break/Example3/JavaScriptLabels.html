@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Labels</title>
+</head>
+<body>
+    <h1>JavaScript Break</h1>
+    
+    <p id="demo"></p>
+
+    <script>
+        const cars = ["BMW", "Audi", "Toyota", "Ferrari"];
+        let text = "";
+
+        list: {
+            text += cars[0] + "<br>"; 
+            text += cars[1] + "<br>"; 
+            break list; //Moment when we break the list
+            text += cars[2] + "<br>"; 
+            text += cars[3] + "<br>"; 
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

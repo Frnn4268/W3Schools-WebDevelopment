@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript instanceof Operator</title>
+</head>
+<body>
+    <h1>JavaScript Operators Typeof</h1>
+    
+    <p>The instanceof operator returns true if an object is an instance of a specified object:</p>
+    <p id="demo"></p>
+
+    <script> 
+    const cars = ["Audi", "Ferrari", "BMW"];
+    document.getElementById("demo").innerHTML =
+        (cars instanceof Array) + "<br>" + 
+        (cars instanceof Object) + "<br>" +
+        (cars instanceof String) + "<br>" +
+        (cars instanceof Number);
+    </script>
+</body>
+</html>

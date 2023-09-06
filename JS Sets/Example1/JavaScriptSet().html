@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Set() Method</title>
+</head>
+<body>
+    <h1>JavaScript Sets</h1>
+
+    <p>Create a Set from an Array:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Add values to a Set:</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        const numbers = new Set(["1","2","3"]);    
+        document.getElementById("demo").innerHTML = numbers.size;
+
+        //Example 2
+        numbers.add("4");
+        numbers.add("5");
+        numbers.add("6");
+        document.getElementById("demo1").innerHTML = numbers.size;
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Complex Data</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+
+    <p>The typeof operator returns object for both objects, arrays, and null.</p>
+    <p>The typeof operator does not return object for functions.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 
+        typeof {name:'Fernando', age:21} + "<br>" +
+        typeof [1,2,3,4] + "<br>" +
+        typeof null + "<br>" +
+        typeof function myFuncType(){};
+    </script>
+</body>
+</html>

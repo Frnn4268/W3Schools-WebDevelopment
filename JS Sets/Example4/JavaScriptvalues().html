@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript values() Method</title>
+</head>
+<body>
+    <h1>JavaScript Sets</h1>
+
+    <p>Set.values() returns a Set Iterator:</p>
+    <p id="demo"></p>
+    
+    <br>
+
+    <p>Iterating Set values:</p>
+    <p id="demo1"></p>
+    
+    <script>
+        //Example 1
+        const cars = new Set(["Supra","R8","Hilux"]);
+        document.getElementById("demo").innerHTML = cars.values();
+
+        //Example 2
+        let text = "";
+        for (const x of cars.values()) {
+            text += x + "<br>";
+        }
+        document.getElementById("demo1").innerHTML = text;
+    </script>
+</body>
+</html>

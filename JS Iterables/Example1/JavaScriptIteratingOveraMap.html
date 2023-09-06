@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Iterating Over a Map</title>
+</head>
+<body>
+    <h1>JavaScript Iterating</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        const cars = new Map([
+          ["Audi", 500],
+          ["BMW", 300],
+          ["Toyota", 200]
+        ]);
+        
+        let text = "";
+        for (const x of cars) {
+          text += x + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

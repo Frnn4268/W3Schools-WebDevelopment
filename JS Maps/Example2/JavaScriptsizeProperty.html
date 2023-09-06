@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Size Property</title>
+</head>
+<body>
+    <h1>JavaScript Maps</h1>
+
+    <p>Using Map.size</p>
+    <p id="demo"></p>
+
+    <script>
+         const cars = new Map([
+            ["RX7", 500],
+            ["R8", 300],
+            ["Wrangler", 200]
+        ]);
+
+        document.getElementById("demo").innerHTML = cars.size;
+    </script>
+</body>
+</html>
