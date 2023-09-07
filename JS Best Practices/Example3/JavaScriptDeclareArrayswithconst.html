@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Declare Arrays with const</title>
+</head>
+<body>
+    <h1>JavaScript Best Practices</h1>
+
+    <script>
+        //Declaring arrays with const will prevent any accidential change of type:
+        let cars = ["Saab", "Volvo", "BMW"];
+        cars = 3;    // Changes array to number
+
+        const cars1 = ["Saab", "Volvo", "BMW"];
+        cars1 = 3;    // Not possible
+    </script>
+</body>
+</html>

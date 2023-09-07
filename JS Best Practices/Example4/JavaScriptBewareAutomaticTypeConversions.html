@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Beware of Automatic Type Conversions</title>
+</head>
+<body>
+    <h1>JavaScript Best Practices</h1>
+
+    <p>A variable can chang its type. In this example x is first a string then a number:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Remove the comment (at the beginning of the lines) to test each case:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>Subtracting a string from a string, does not generate an error but returns NaN (Not a Number):</p>
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        let x = "Hello";
+        x = 5;
+        document.getElementById("demo").innerHTML = typeof x;
+
+        //Example 2
+        let x1 = 5;
+        //x = 5 + 7;    // x.valueOf() is 12, typeof x is a number
+        //x = 5 + "7";  // x.valueOf() is 57, typeof x is a string
+        //x = "5" + 7;  // x.valueOf() is 57, typeof x is a string
+        //x = 5 - 7;    // x.valueOf() is -2, typeof x is a number
+        //x = 5 - "7";  // x.valueOf() is -2, typeof x is a number
+        //x = "5" - 7;  // x.valueOf() is -2, typeof x is a number
+        //x = 5 - "x";  // x.valueOf() is NaN, typeof x is a number
+
+        document.getElementById("demo1").innerHTML = x1.valueOf() + " " + typeof x;
+
+        //Example 3
+        document.getElementById("demo2").innerHTML = "Hello" - "Dolly";
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Declarations on Top</title>
+</head>
+<body>
+    <h1>JavaScript Best Practices</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        // Declare at the beginning
+        let firstName, lastName, price, discount, fullPrice;
+
+        // Use later
+        firstName = "Fernando";
+        lastName = "Martínez";
+
+        price = 20;
+        discount = 0.10;
+
+        fullPrice = price - discount;
+
+        document.getElementById("demo").innerHTML = fullPrice;
+    </script>
+</body>
+</html>

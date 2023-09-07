@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript JSON Example</title>
+</head>
+<body>
+    <h1>JavaScript JSON</h1>
+
+    <h2>Create Object from JSON String</h2>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>Creating another example of JSON implementation and display</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let text = '{"employees":[' +
+        '{"firstName":"John","lastName":"Doe" },' +
+        '{"firstName":"Anna","lastName":"Smith" },' +
+        '{"firstName":"Peter","lastName":"Jones" }]}';
+
+        const obj = JSON.parse(text);
+        document.getElementById("demo").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+
+        //Example 2
+        let carJSON = '{"cars":[' +
+        '{"id":"1","name":"R8","brand":"Audi"},' +
+        '{"id":"2","name":"RX7","brand":"Mazda"},' +
+        '{"id":"3","name":"Supra","brand":"Toyota"}]}';
+        
+        const objJSON = JSON.parse(carJSON);
+        document.getElementById("demo1").innerHTML = objJSON.cars[1].id + " " + objJSON.cars[1].name + " " + objJSON.cars[1].brand;
+    </script>
+</body>
+</html>

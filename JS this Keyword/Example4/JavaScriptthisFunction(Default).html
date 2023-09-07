@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript this in a Function (Default)</title>
+</head>
+<body>
+    <h1>JavaScript this Keyword</h1>
+
+    <p>In this example, <b>this</b> refers to the the window object:</p>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = myFunction();
+
+        function myFunction() {
+            return this;
+        }
+    </script>
+</body>
+</html>

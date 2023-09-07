@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript debugger Keyword</title>
+</head>
+<body>
+    <h1>JavaScript Debugging</h1>
+
+    <p id="demo"></p>
+    <p>With the debugger turned on, the code below should stop executing before it executes the third line.</p>
+
+    <script>
+        let x = 15 * 20;
+        debugger;
+        document.getElementById("demo").innerHTML = x;
+    </script>
+</body>
+</html>

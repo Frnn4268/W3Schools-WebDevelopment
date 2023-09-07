@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript this Alone</title>
+</head>
+<body>
+    <h1>JavaScript this Keyword</h1>
+
+    <p>In this example, <b>this</b> refers to the window object:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        let x = this;
+        document.getElementById("demo").innerHTML = x;
+
+        //Example 2
+        "use strict";
+        let x1 = this;
+        document.getElementById("demo1").innerHTML = x1;
+    </script>
+</body>
+</html>

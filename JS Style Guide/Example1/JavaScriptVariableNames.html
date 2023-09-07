@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variable Names</title>
+</head>
+<body>
+    <h1>JavaScript Style Guide</h1>
+
+    <h2>Variable Names</h2>
+    <p id="demo"></p>
+
+    <br>
+
+    <h2>Spaces Around Operators</h2>
+    <p id="demo1"></p>
+
+    <br>
+
+    <h2>Code Indentation</h2>
+    <p id="demo2"></p>
+
+    <br>
+
+    <h2>Loading JavaScript in HTML</h2>
+    <p>Use simple syntax for loading external scripts (the type attribute is not necessary):</p>
+
+    <br>
+
+    <h2>Line Lenght < 80</h2>
+    <p>The best place to break a code line is after an operator or a comma.</p>
+    <p id="demo3"></p>
+
+    <script>
+        //Example 1
+        price = 19.90;
+        tax = 0.20;
+
+        fullPrice = price + (price * tax);
+        document.getElementById("demo").innerHTML = fullPrice;
+
+        //Example 2
+        //let x = y + z; //Always put spaces around operators ( = + - * / ), and after commas:
+        const myArray = ["Audi", "Ferrari", "Lamborghini"];
+        document.getElementById("demo1").innerHTML = myArray;
+
+        //Example 3
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+        document.getElementById("demo2").innerHTML = toCelsius(50);
+
+        //Example 4
+        <script src="myscript.js"></script>
+
+        //Example 5
+        document.getElementById("demo").innerHTML = "Hello Dolly.";
+    </script>
+</body>
+</html>

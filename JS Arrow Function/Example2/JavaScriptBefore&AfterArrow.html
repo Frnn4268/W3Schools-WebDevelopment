@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Before and After Arrow Function</title>
+</head>
+<body>
+    <h1>JavaScript Arrow Function</h1>
+
+    
+    <p>This example shows the syntax of a function, without the use of arrow function syntax.</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>This example shows the syntax of an Arrow Function, and how to use it.</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example without arrow function
+        let hello = "";
+
+        hello = function() {
+            return "Hello Ghost!";
+        }
+
+        document.getElementById("demo").innerHTML = hello();
+
+        //Example with arrow Function
+        let hello1 = "";
+
+        hello1 = () => {
+        return "Hello Ghost!";
+        }
+
+        document.getElementById("demo1").innerHTML = hello1();
+    </script>
+</body>
+</html>

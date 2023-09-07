@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Declare Objects with const</title>
+</head>
+<body>
+    <h1>JavaScript Best Practices</h1>
+
+    <script>
+        //Declaring objects with const will prevent any accidental change of type:
+        let car = {type:"Fiat", model:"500", color:"white"};
+        car = "Fiat";      // Changes object to string
+
+        const car1 = {type:"Fiat", model:"500", color:"white"};
+        car1 = "Fiat";      // Not possible
+    </script>
+</body>
+</html>
