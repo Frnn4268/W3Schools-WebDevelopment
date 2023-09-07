@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Hoisting Examples</title>
+</head>
+<body>
+    <h1>JavaScript Hoisting</h1>
+
+    <h2>Example 1</h2>
+    <p id="demo"></p>
+
+    <br>
+
+    <h2>Example 2</h2>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        x = 5; 
+        elem = document.getElementById("demo"); 
+        elem.innerHTML = x;           
+        var x; 
+
+        //Example 2
+        var x;
+        x = 5; 
+        elem = document.getElementById("demo1"); 
+        elem.innerHTML = x;   
+
+        //Example 3
+        
+    </script>
+</body>
+</html>

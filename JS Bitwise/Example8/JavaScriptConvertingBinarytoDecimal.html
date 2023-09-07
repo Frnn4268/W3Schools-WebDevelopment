@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Converting Binary to Decimal</title>
+</head>
+<body>
+    <h1>JavaScript Bitwise</h1>
+
+    <h2>JavaScript Convert Binary to Decimal</h2>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = bin2dec(101);
+        function bin2dec(bin){
+            return parseInt(bin, 2).toString(10);
+        }
+    </script>
+</body>
+</html>

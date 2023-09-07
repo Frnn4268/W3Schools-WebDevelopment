@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Global Variables in HTML</title>
+</head>
+<body>
+    <h1>JavaScript Scope</h1>
+
+    
+    <p>In HTML, global variables defined with <b>var</b>, will become window variables.</p>
+    <p id="demo"></p>
+
+    <br>
+    
+    <p>In HTML, global variables defined with <b>let</b>, will not become window variables.</p>
+    <p id="demo1"></p>
+
+    <script>
+        //Example 1
+        var carName = "Volvo";    
+        document.getElementById("demo").innerHTML = "I can display " + window.carName;
+
+        //Example 2
+        let carName1 = "Volvo";
+        document.getElementById("demo1").innerHTML = "I can not display " + window.carName1;
+    </script>
+</body>
+</html>

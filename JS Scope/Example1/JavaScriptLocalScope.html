@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Local Scope</title>
+</head>
+<body>
+    <h1>JavaScript Scope</h1>
+
+    
+    <p><b>carName</b> is undefined outside myFunction():</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        myFunction();
+
+        function myFunction() {
+            let carName = "Audi";
+            document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+        }
+        document.getElementById("demo2").innerHTML = typeof carName;
+    </script>
+</body>
+</html>

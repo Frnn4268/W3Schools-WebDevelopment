@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Automatic Type Conversion</title>
+</head>
+<body>
+    <h1>JavaScript Type Conversion</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML =
+        (21 + null) + "<br>"  +
+        ("21" + null) + "<br>" +
+        ("21" + 2) + "<br>" +
+        ("21" - 2) + "<br>" +
+        ("21" * "2") + "<br>" +
+        ("21" / "2") + "<br>"
+    </script>
+</body>
+</html>
