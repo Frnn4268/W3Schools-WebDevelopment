@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Expecting Loose Comparison</title>
+</head>
+<body>
+    <h1>JavaScript Mistakes</h1>
+
+    <h2>Common JavaScript Mistakes</h2>
+    <p>In regular comparison, data type does not matter. This if statement returns true:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>In strict comparison, data type does matter. This if statement returns false:</p>
+    <p id="demo1"></p>
+
+    <script>
+        let x = 10;
+        let y = "10";
+        
+        //Example 1
+        document.getElementById("demo").innerHTML = Boolean(x == y);
+
+        //Example 2
+        document.getElementById("demo1").innerHTML = Boolean(x === y);
+    </script>
+</body>
+</html>

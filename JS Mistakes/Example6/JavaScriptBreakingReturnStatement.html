@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Breaking a Return Statement</title>
+</head>
+<body>
+    <h1>JavaScript Mistakes</h1>
+
+    <p>This example will return a correct result:</p>
+    <p id="demo"></p>
+
+    <script>
+        //Example 1
+        document.getElementById("demo").innerHTML = myFunction(10);
+        function myFunction(a) {
+            let power = 10
+            return a * power
+        }
+    </script>
+</body>
+</html>

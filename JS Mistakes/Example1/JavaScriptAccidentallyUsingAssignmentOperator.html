@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Accidentally Using the Assignment Operator</title>
+</head>
+<body>
+    <h1>JavaScript Mistakes</h1>
+
+    <h2>JavaScript Comparisons</h2>
+    <p>This returns false (as expected) because x is not equal to 10:</p>
+    <p id="demo"></p>
+
+    <br>
+
+    <p>This returns true (maybe not as expected), because 10 is true:</p>
+    <p id="demo1"></p>
+
+    <br>
+
+    <p>This if statement returns false (maybe not as expected), because 0 is false:</p>
+    <p id="demo2"></p>
+
+    <script>
+        //Example 1
+        let x = 0;
+        document.getElementById("demo").innerHTML = Boolean(x == 10);
+
+        //Example 2
+        document.getElementById("demo1").innerHTML = Boolean(x = 10);
+
+        //Example 3
+        document.getElementById("demo2").innerHTML = Boolean(x = 0);
+    </script>
+</body>
+</html>
